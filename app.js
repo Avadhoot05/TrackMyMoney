@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import fileUpload from 'express-fileupload';
 import router from "./routes.js";
 import bodyParser from "body-parser";
-import path from "path";
+const path = require('path');
 dotenv.config({ path: "./config.env" });
 
 const app = express();
