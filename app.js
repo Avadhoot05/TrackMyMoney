@@ -1,11 +1,11 @@
 
 import express from 'express';
-import dotenv from "dotenv"
-import cookieParser from 'cookie-parser'
+import dotenv from "dotenv";
+import cookieParser from 'cookie-parser';
 import fileUpload from 'express-fileupload';
-import router from "./routes.js"
-import bodyParser from "body-parser"
-dotenv.config({ path: "./config.env" })
+import router from "./routes.js";
+import bodyParser from "body-parser";
+dotenv.config({ path: "./config.env" });
 
 const app = express();
 
@@ -19,15 +19,15 @@ app.use(cookieParser());
 app.use(fileUpload())
 app.use('/', router);
 
-import "./db/conn.js"
+import "./db/conn.js";
 
 const port = process.env.PORT || 3000;
 
 if (process.env.NODE_ENV == "production") {
   app.use(express.static("frontend/build"));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './frontend', 'build', 'index.html'));
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/frontend', 'build', 'index.html'));
   })
 }
 
