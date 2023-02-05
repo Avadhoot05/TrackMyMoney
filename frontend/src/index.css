@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSansMedium';
+  src: url("./fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url("./fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSansXBold';
+  src: url("./fonts/OpenSans-ExtraBold.ttf");
+}
+
+
+html {
+	overflow: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+  overflow: scroll;
+  background-color: #f0f1f6 !important;
+}
+
+p,
+h2 {
+	margin: 0 !important;
+}
+
+.btnSubmit{
+    width: 150px;
+    margin: 20px 0 0;
+    padding: 5px 0;
+    background: #326b84;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgb(197, 197, 197);
+}
+
+.btnSubmit:hover{
+    background: #246683;
+    box-shadow: 0 0 5px 1px rgb(168, 168, 168);
+}
+
+::-moz-selection { 
+    background: #246683;
+  }
+  
+  ::selection {
+    background: #246683;
+  }
+
+hr{
+  filter: opacity(0.4) !important;
+}
+
+

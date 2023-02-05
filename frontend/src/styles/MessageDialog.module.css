@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    max-width: 500px;
+    height: 300px;
+    margin: 10px auto;
+}
+
+.message {
+    font-size: 16px;
+}
+
+.btn{
+    width: 100px;
+    padding: 5px 15px;
+    background: #326b84;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgb(197, 197, 197);
+}
+
+.btn:hover{
+	background: #246683;
+	box-shadow: 0 0 5px 1px rgb(168, 168, 168);
+}

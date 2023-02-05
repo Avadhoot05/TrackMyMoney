@@ -1,0 +1,40 @@
+.monthHeading{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.chartContainer{
+    width: 70%;
+    margin: auto;
+    
+    border-radius: 5px;
+}
+
+.container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 32px auto;
+}
+
+.card{
+    width: 200px;
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cardHeading{
+    text-align: left;
+    font-size: 16px;
+    font-family: "OpenSansBold";
+}
+
+.chart{
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+}

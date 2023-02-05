@@ -1,0 +1,140 @@
+.blurredBackOverlay{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2147483646;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.disable{
+    filter: opacity(0.5);
+    pointer-events: none;
+    cursor: default;
+}
+
+.dialogContainer{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+    background: #fff;
+    width: 420px;
+    height: 260px;
+    z-index: 2147483647;
+    padding: 30px 30px 30px;
+    border-radius: 5px;
+}
+
+.adjustHeight{
+    height: 150px;
+}
+
+.selectContainer{
+    position: relative;
+}
+
+.cross{
+    position: inherit;
+    right: -35px;
+    top: 1px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.cross:hover{
+	transform: scale(1.1);
+}
+
+.error{
+    position: absolute;
+    font-size: 11px;
+    color: red;
+    top: -10;
+    left: 0;
+}
+
+p{
+    font-size: 16px;
+    text-align: left;
+}
+
+p span{
+    font-family: "OpenSansMedium";
+    background-color: rgb(230, 230, 230);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.accountSelectInput{
+    margin: 20px 0px 0px;
+    border: none;
+    background-color: rgb(174 226 255 / 16%);
+    cursor: pointer;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btnContainer button{
+    margin-left: 10px;
+    padding: 3px 10px;
+    background: #326b84;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgb(197 197 197);
+}
+
+.btnContainer button:hover{
+    box-shadow: 0 0 6px 2px rgb(179, 179, 179);
+}
+
+
+.RedirectionDBContainer{
+    height: 120px;
+}
+
+.RedirectionDBlink{
+    position: relative;
+	width: 100px;
+    padding: 5px 15px;
+    background: #326b84;
+    color: #fff;
+	text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgb(197, 197, 197);
+    top: 20px;
+}
+
+.RedirectionDBlink:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #246683;
+	box-shadow: 0 0 5px 1px rgb(168, 168, 168);
+}
+
+@media screen and (max-width: 400px)
+{
+    .dialogContainer{
+        width: 350px;
+    }
+
+    .RedirectionDBContainer{
+        height: 140px;
+    }
+}

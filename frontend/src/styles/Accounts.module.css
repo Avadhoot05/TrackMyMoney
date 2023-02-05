@@ -1,0 +1,266 @@
+.errorMsg{
+    position: absolute;
+    font-size: 12px;
+    font-family: "OpenSansMedium";
+    color: red;
+    text-align: left;
+}
+
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    filter: opacity(0.5);
+}
+
+.container{
+    width: 630px;
+    min-height: 95px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 15px auto;
+    box-shadow: 1px 1px 5px 5px rgb(235, 235, 235);
+}
+
+.hide{
+    display: none;
+}
+
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputBox>div{
+    position: relative;
+}
+
+.nameInput{
+    display: inline;
+    width: 535px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.addButtonIcon{
+    padding: 4px 15px;
+    background-color: #326b8f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addButtonIcon:hover{
+    transform: scale(1.01);
+    background-color: #246683;
+}
+
+
+.newAccountsContainer{
+    min-height: 50px;
+    margin: 15px 0;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+
+.newAccountsContainer::-webkit-scrollbar { /* WebKit */
+    width: 0px;
+    height: 0px;
+}
+
+.newAccountItem{
+    display: inline-block ;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.newAccountName{
+    display: inline;
+}
+
+.crossButton{
+    display: inline;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.crossButton:hover{
+    transform: scale(1.1);
+}
+
+.saveButton{
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "OpenSansMedium";
+    background-color: lightcoral;
+    padding: 3px 10px;
+    margin-left: 5px;
+    float: right;
+    
+}
+
+.secondContainer{
+    width: 630px;
+    height: 477px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 70px auto;  
+    box-shadow: 1px 1px 5px 5px rgb(235, 235, 235);
+}
+
+.secondContainerMarginTop{
+    margin-top: 20px;
+}
+
+.ButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.existingAccountHeading{
+    font-size: 16px;
+}
+
+hr{
+    width: 100%;
+}
+
+.saveButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.newButton{
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: lightcoral;
+    padding: 5px 10px;
+    
+    float: right;
+}
+
+.existingAccountsContainer{
+    margin-top: 20px;
+    height: 360px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.existingAccountsContainer::-webkit-scrollbar { /* WebKit */
+    width: 0px;
+    height: 0px;
+}
+
+.accountItem{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.accountItem:hover{
+    box-shadow: 0 0 5px 1px rgb(236, 236, 236)
+}
+
+.accountItem:hover .trashButton{
+    filter: opacity(1);
+}
+
+.trashButton{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.1s linear;
+    border-radius: 4px;
+    filter: opacity(0.5);
+}
+
+
+    
+    
+
+
+/* Button with image and text*/
+.btn{
+    background: transparent;
+    color: #000;
+    transition: all 0.2s linear;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: all 0.1s linear;
+    padding: 6px 15px;
+    font-family: "OpenSansMedium";
+    margin-left: 5px;
+}
+
+.btn:hover{
+    background: #326B84;
+    color: #fff;
+    box-shadow: 1px 1px 5px 1px rgb(219, 219, 219);
+}
+
+.right {
+  order: 1;
+}
+
+.marginRight{
+    margin-right: 5px;
+}
+
+/*----------------*/
+
+
+
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 540px;
+    }
+
+    .secondContainer{
+        width: 540px;
+    }
+
+    .nameInput{
+        width: 446px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        width: 350px;
+    }
+
+    .secondContainer{
+        width: 350px;
+    }
+
+    .nameInput{
+        width: 255px;
+    }
+}
+

@@ -1,0 +1,213 @@
+.title{
+    font-size: 24px;
+    font-family: "OpenSansBold";
+    text-transform: capitalize;
+    color: #080808;
+    margin: 5px auto 25px auto;
+}
+
+.formBox{
+    width: 488px;
+    background: #fff;
+    margin: 50px auto;
+    padding: 40px 50px 40px;  
+    
+    box-shadow: 1px 1px 5px 5px rgb(235, 235, 235);
+    border-radius: 4px;
+}
+
+.alert{
+    font-size: 14px;
+    font-family: "OpenSansMedium";
+    color: red;
+    text-align: left;
+}
+
+.MuiFormControl-fullWidth {
+    width: 100%;
+}
+
+
+.expenseTypeContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/*--------*/
+.expenseTypeLabel {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "OpenSansMedium";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .expenseTypeLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .expenseTypeLabel:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .expenseTypeLabel input:checked ~ .checkmark {
+    background-color: #326b84;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .expenseTypeLabel:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+/*-----------*/
+.typeSelectInput{
+    width: 48%;
+}
+
+.itemInput{
+    width: 100%;
+}
+
+.currencySelectInput,
+.accountSelectInput{
+    width: 35%;
+    border: none;
+    background-color: rgb(174 226 255 / 16%);
+}
+
+.accountSelectInput{
+    width: 100%;
+}
+
+.amountInput{
+    width: 61%;
+}
+
+.amountInput{
+    margin-left: 15px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("../media/dropdown.png") no-repeat right #aee2ff29 !important;
+    background-position-x: calc(100% - 10px) !important;
+    background-position-y: 50%;
+    padding: 15px 10px;
+    border: solid 1px rgb(168, 168, 168);
+    border-radius: 5px;
+    background-size: 10px !important;
+}
+
+select:focus-visible{
+    outline: none;
+}
+
+.expenseImageContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.expenseImageInput{
+    display: none;
+}
+
+.expenseImageButton{
+    width: 35px;
+    height: 32px;
+    border: none;
+    background: rgb(174 226 255 / 16%);
+    border-radius: 5px;
+}
+
+.expenseImageButtonIcon{
+    width: 23px;
+    height: 23px;
+    transform: rotate(45deg);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.expenseImageName{
+    margin-left: 5px !important;
+    font-size: 14px;
+}
+
+.expenseImageButton:hover{
+    box-shadow: 2px 2px 2px 1px rgb(235, 235, 235);
+}
+
+.ImageButtonTooltip{
+    width: 20px;
+    height: 20px;
+    padding: 5px 8px;
+    font-size: 12px;
+    display: none;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .formBox{
+        width: 400px;
+    }   
+
+    .typeSelectInput,
+    .itemInput{
+        width: 100%;
+    }
+
+    .currencySelectInput{
+        width: 34%;
+    }
+
+    .amountInput{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .formBox{
+        width: 350px;
+        margin: 120px auto;
+        padding: 40px 30px 40px; 
+    }   
+
+    .typeSelectInput,
+    .itemInput,
+    .currencySelectInput,
+    .amountInput
+    {
+        margin: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,206 @@
+.title{
+    font-size: 30px;
+    font-family: "OpenSansBold";
+    text-transform: capitalize;
+    color: #080808;
+    margin: 5px auto 30px auto;
+}
+
+.formBox{
+    width: 488px;
+    background: #fff;
+    margin: 150px auto;
+    padding: 40px 50px 20px;  
+    box-shadow: 0 0 10px 1px rgb(207, 207, 207);
+    border-radius: 5px;
+}
+
+.warning{
+    position: absolute;
+    top: -17px;
+    left: 0;
+    font-size: 12px;
+    color: #F44336;
+    font-family: "OpenSansMedium";
+}
+
+.createFormBox{
+    margin: 80px auto;
+}
+
+.weakPswd{
+    border: 1px solid rgb(255, 6, 6);
+}
+
+.midPswd{
+    border: 1px solid rgb(255, 150, 53);
+}
+
+.strongPswd{
+    border: 1px solid rgb(163, 253, 46);
+}
+
+.passwordStrength{
+    width: 35px;
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    top: 35%;
+}
+
+.inputBox{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.input-box{
+    position: relative;   
+}
+
+hr{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select{
+    width: 100%;
+    background-color: rgb(174 226 255 / 16%);
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0;
+    padding: 15px 10px;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    transition: transform 0.1s linear;
+}
+
+input:focus-visible{
+    outline: none;
+    transform: scale(1.01);
+}
+
+.pswdToggle{
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    right: 30px;
+    cursor: pointer;
+    filter: opacity(0.5);
+}
+
+
+.btnSubmit{
+    width: 150px;
+    margin: 20px 0 0;
+    padding: 5px 0;
+    background: #326b84;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgb(197, 197, 197);
+}
+
+.btnSubmit:hover{
+    background: #246683;
+    box-shadow: 0 0 5px 1px rgb(168, 168, 168);
+}
+
+.accountsuggest{
+    color:#070707;
+    font-family: "OpenSansRegular";
+    margin: 0;
+}
+
+.accountsuggestlink{
+    color: #326b84;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.accountsuggestlink:hover{
+    color: #246683;
+}
+
+.pswdwarning{
+    color: #F44336;
+    text-align: left;
+    font-size: 12px;
+    font-family: "OpenSansBold";
+}
+
+.alert{
+    font-size: 14px;
+    font-family: "OpenSansMedium";
+    color: red;
+    text-align: left;
+}
+
+.twoColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select{
+
+    background: url("../media/dropdown.png") no-repeat right #aee2ff29 !important;
+    background-position-x: calc(100% - 10px) !important;
+    background-position-y: 50%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-size: 5px !important;
+}
+
+select:focus-visible{
+    outline: none;
+}
+
+.currencyInputBox{
+    display: inline;
+    width: 30%;
+}
+
+.amountInputBox{
+    display: inline;
+    width: 70%;
+    margin-left: 15px;
+}
+
+.amountInput{
+    width: 68% !important;
+}
+
+@media screen and (min-width: 373px) and (max-width: 450px) {
+    .formBox{
+        width: 373px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }   
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .formBox{
+        width: 400px;
+    }   
+
+    .currencyInputBox{
+        display: inline;
+        width: 30%;
+    }
+    
+    .amountInputBox{
+        display: inline;
+        width: 49%;
+        margin-left: 15px;
+    }
+    
+    .amountInput{
+        width: 49% !important;
+    }
+}
+

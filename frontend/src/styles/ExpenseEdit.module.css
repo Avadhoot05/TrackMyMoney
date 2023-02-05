@@ -1,0 +1,45 @@
+.formBox{
+    position: absolute;
+    height: 490px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483646;
+    padding-top: 20px;
+    box-shadow: none; 
+}
+
+.cross{
+    position: inherit;
+    right: -35px;
+    top: 1px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.cross:hover{
+	background-color: rgb(245, 245, 245);
+}
+
+.expenseImageRemoveIcon{
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.heading{
+    font-size: 24px;
+	color: black;
+	align-self: flex-start;
+    text-align: left;
+}
+
+form{
+    margin-top: 30px;
+}

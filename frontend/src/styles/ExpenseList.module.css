@@ -1,0 +1,152 @@
+.container{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+}
+
+.infoContainer{
+    align-self: flex-start;
+    background: rgb(247, 247, 247);
+    padding: 5px 8px 8px;
+    box-shadow: 1px 1px 5px 1px rgb(219, 219, 219);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.infoContainer ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.infoContainer li{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "OpenSansBold";
+}
+
+.infoContainer li:nth-child(2){
+    margin-left: 16px;
+}
+
+.infoContainer ul li:nth-child(1):before {
+    content: "\2022";
+    color: red;
+    font-family: "OpenSansXBold";
+    display: inline-block; 
+    width: 4px;
+    margin-right: 8px;
+}
+
+.infoContainer ul li:nth-child(2):before {
+    content: "\2022";
+    color: rgb(72, 192, 132);
+    font-family: "OpenSansXBold";
+    display: inline-block; 
+    width: 4px;
+    margin-right: 8px;
+}
+
+.headingContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    color: #000;
+    font-family: "OpenSansMedium";
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+.filterBtn{
+    background: transparent;
+    color: #000;
+    transition: all 0.2s linear;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: all 0.1s linear;
+    padding: 6px 15px;
+    font-family: "OpenSansMedium";
+    margin-left: 5px;
+}
+
+.filterBtn:hover{
+    background: #326B84;
+    color: #fff;
+    box-shadow: 1px 1px 5px 1px rgb(219, 219, 219);
+}
+
+.horizontalLine{
+    width: 100%;
+    margin: 8px 0 16px;
+}
+
+.NoDataDiv{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin: 32px auto 0;
+}
+
+.NoDataTxt,
+.loadingTxt{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ff6347;
+    font-family: "OpenSansBold";
+}
+
+.loadingTxt{
+    color: #000;
+    font-size: 12px;
+    font-family: 'OpenSansMedium';
+    text-transform: capitalize;
+}
+
+.marginRight{
+    margin-right: 5px;
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        width: 770px;
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 471px;
+    } 
+}
+
+@media screen and (min-width: 373px) and (max-width:600px){
+    .container{
+        width: 95%;
+    } 
+}
+
+@media screen and (max-width:373px){
+    .container{
+        width: 350px;
+    }   
+}

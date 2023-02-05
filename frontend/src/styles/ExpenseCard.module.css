@@ -1,0 +1,116 @@
+.container{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.expenseCardBox{
+    width: 100%;
+    height: calc(100vh - 200px);
+    padding-right: 5px;
+    overflow-y: scroll;
+}
+
+.expenseCardBox::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.expenseCardBox::-webkit-scrollbar-thumb {
+    background-color: #326B84;
+}
+
+.row, .header{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5px;
+    padding: 5px 5px;
+}
+
+.row:hover{
+    box-shadow: 0 0 5px 1px rgb(225, 225, 225);
+}
+
+.cell>p, 
+.header>p{
+    text-align: center !important;
+}
+
+.header{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.header>p{
+    font-family: "OpenSansBold";
+}
+
+.income{
+    color: #47a553;
+}
+
+.income::before{
+    content: '+';
+}
+
+.spent{
+    color: rgb(141, 0, 0);
+}
+
+.spent::before{
+    content: '-';
+}
+
+.invest{
+    color: rgb(255, 153, 10);
+}
+
+.amount{
+    font-family: "OpenSansBold";
+}
+
+.iconOverlayDiv{
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.1s linear;
+    opacity: 0;
+}
+
+.row:hover .iconOverlayDiv{
+    opacity: 1;
+}
+
+.icons{
+    padding: 5px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    transition: all 0.1s linear;
+    border-radius: 5px;
+    filter: opacity(0.5);
+}
+
+.icons:hover{
+    background: rgb(221, 221, 221);
+}
+
+.disableIcon{
+    pointer-events: none;
+    cursor: default;
+}
+
+@media screen and (max-width:376px){
+    .expenseCardBox, 
+    .header, 
+    .row{
+        width: 450px;
+    }   
+}

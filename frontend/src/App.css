@@ -1,0 +1,29 @@
+.App {
+	text-align: center;
+	height: 100vh;
+	background-color: #f0f1f6;
+}
+
+p {
+	margin: 0;
+}
+
+.currency_converter_popup {
+	width: 170px;
+	height: fit-content;
+	position: fixed;
+	bottom: 15px;
+	padding: 5px 5px 5px 10px;
+	background-color: #326b84;
+	color: #fff;
+	font-size: 14px;
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.currency_converter_popup:hover{
+	background: #246683;
+	box-shadow: 0 0 5px 1px rgb(168 168 168);
+}
+
+
