@@ -31,12 +31,12 @@ function App() {
 	return (
 	<>
 		<loginStatusContext.Provider value={{state, dispatch}}>
-			<Router>
+			<Router basename='/'> 
 				<div className="App">
 					<Nav/>
 					<Switch>
 						<Route exact path="/home" component={Home}/>
-						<Route exact path="/" component={Home}/>
+						<Route exact path="/" component={Home}/> 
 						<Route exact path="/signin">
 							<React.Suspense fallback={<BlockingOverlay showLoader={true}/>}>
 								<Signin/>
