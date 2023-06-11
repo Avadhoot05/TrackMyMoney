@@ -3,7 +3,7 @@ Visit: https://trackmymoney.vercel.app/
 
 Demo on Youtube: https://www.youtube.com/watch?v=2W5UXzU8kCs
 
-### `About Trackk My Money`
+### `About Track My Money`
 
 - It helps to keep record of daily expenses with ease. 
 - Users can create, view, update, delete records at any time.
